@@ -1,13 +1,14 @@
 import React from 'react';
 import type { FC } from 'react';
 import { Button } from '@/components/ui/button';
+import avatarImage from '../assets/images/loftwah_avatar.jpg';
 
 const ProfileCard: FC = () => {
   return (
     <div className="flex flex-col items-center md:flex-row md:items-start gap-8 p-6 bg-card rounded-lg shadow-md">
       <div className="flex flex-col items-center">
         <img 
-          src="/assets/images/loftwah_avatar.jpg" 
+          src={avatarImage.src} 
           alt="Dean Lofts" 
           className="w-40 h-40 rounded-full object-cover border-4 border-primary"
         />
