@@ -2,6 +2,9 @@
 import { buttonVariants } from "@/components/ui/button";
 import ThemeToggle from "@/components/ThemeToggle.astro";
 import "../styles/fontawesome.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBlog, faTerminal } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import avatarImage from "../assets/images/loftwah_avatar.jpg";
 ---
 
@@ -29,7 +32,7 @@ import avatarImage from "../assets/images/loftwah_avatar.jpg";
           rel="noreferrer"
           class={buttonVariants({ variant: 'ghost' })}
         >
-          <i class="fa-solid fa-blog mr-2"></i>
+          <FontAwesomeIcon icon={faBlog} className="w-4 h-4 mr-2" />
           Blog
         </a>
         <a
@@ -38,7 +41,7 @@ import avatarImage from "../assets/images/loftwah_avatar.jpg";
           rel="noreferrer"
           class={buttonVariants({ variant: 'ghost' })}
         >
-          <i class="fa-solid fa-terminal mr-2"></i>
+          <FontAwesomeIcon icon={faTerminal} className="w-4 h-4 mr-2" />
           Linux for Pirates!
         </a>
         <a
@@ -47,7 +50,7 @@ import avatarImage from "../assets/images/loftwah_avatar.jpg";
           rel="noreferrer"
           class={buttonVariants({ variant: 'ghost' })}
         >
-          <i class="fa-brands fa-github mr-2"></i>
+          <FontAwesomeIcon icon={faGithub} className="w-4 h-4 mr-2" />
           GitHub
         </a>
         <ThemeToggle />

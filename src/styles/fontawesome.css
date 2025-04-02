@@ -1,2 +1,9 @@
 /* Font Awesome SVG Core CSS */
-@import '@fortawesome/fontawesome-svg-core/styles.css'; 
+@import '@fortawesome/fontawesome-svg-core/styles.css';
+
+/* Custom sizes for Font Awesome icons in footer */
+footer i.fa-brands {
+  width: 1.25rem;
+  height: 1.25rem;
+  font-size: 1.25rem;
+}

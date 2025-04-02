@@ -11,4 +11,4 @@ config.autoAddCss = false;
 // Add all icons to the library so you can use them without importing individually
 library.add(fas, far, fab);
 
-export { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
+export { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
