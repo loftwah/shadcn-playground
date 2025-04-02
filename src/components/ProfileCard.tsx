@@ -30,7 +30,7 @@ const ProfileCard: FC = () => {
               <FontAwesomeIcon icon={faXTwitter} className="w-5 h-5" />
             </Button>
           </a>
-          <a href="https://bsky.app/profile/loftwah.bsky.social" target="_blank" rel="noreferrer">
+          <a href="https://bsky.app/profile/loftwah.com" target="_blank" rel="noreferrer">
             <Button variant="outline" size="icon">
               <FontAwesomeIcon icon={faBluesky} className="w-5 h-5" />
             </Button>
