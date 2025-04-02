@@ -17,11 +17,11 @@ import ogImage from "../assets/images/loftwah_og.jpg";
       <img 
         src={bannerImage.src} 
         alt="Dean Lofts Banner" 
-        class="w-full h-48 object-cover rounded-lg shadow-md"
+        class="w-full aspect-[3/1] max-w-5xl mx-auto object-cover rounded-lg shadow-md"
       />
     </div>
     
-    <div class="space-y-16">
+    <div class="max-w-5xl mx-auto space-y-16">
       <ProfileCard client:load />
       
       <ProjectsLinks client:load />
