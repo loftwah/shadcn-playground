@@ -1,9 +1,9 @@
 {
-  "name": "@area44/astro-shadcn-ui-template",
+  "name": "@loftwah/shadcn-playground",
   "version": "25.01.27",
-  "description": "An Astro template for building apps.",
+  "description": "An Astro playground for shadcn/ui.",
   "author": {
-    "name": "AREA44"
+    "name": "loftwah"
   },
   "license": "MIT",
   "scripts": {
