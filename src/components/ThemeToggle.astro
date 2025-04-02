@@ -1,11 +1,11 @@
 ---
-import { SunIcon, MoonIcon } from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
+import "../styles/fontawesome.css";
 ---
 
 <Button variant="ghost" size="icon" id="themeToggle">
-  <SunIcon className="h-[1.5rem] w-[1.3rem] dark:hidden" />
-  <MoonIcon className="hidden h-5 w-5 dark:block" />
+  <i class="fa-solid fa-sun h-[1.5rem] w-[1.3rem] dark:hidden"></i>
+  <i class="fa-solid fa-moon hidden h-5 w-5 dark:block"></i>
   <span class="sr-only">Toggle theme</span>
 </Button>
 
