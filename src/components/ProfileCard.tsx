@@ -1,7 +1,7 @@
 import React from 'react';
 import type { FC } from 'react';
 import { Button } from '@/components/ui/button';
-import avatarImage from '../assets/images/loftwah_avatar.jpg';
+import avatarImage from '../assets/images/avatar.jpg';
 import { FontAwesomeIcon } from '../lib/fontawesome';
 import { faTrophy, faNewspaper } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faXTwitter, faBluesky } from '@fortawesome/free-brands-svg-icons';

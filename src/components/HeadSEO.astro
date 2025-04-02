@@ -12,8 +12,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 // Use custom og image if available
 if (Astro.props.ogImage === undefined) {
-  // Try to use the loftwah_og.jpg if it exists, otherwise default
-  Astro.props.ogImage = new URL("/assets/images/loftwah_og.jpg", Astro.site);
+  // Try to use the og-image.jpg if it exists, otherwise default
+  Astro.props.ogImage = new URL("/assets/images/og-image.jpg", Astro.site);
 }
 
 const { title, description, ogImage } = Astro.props;

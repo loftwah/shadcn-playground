@@ -16,6 +16,8 @@ const { title, description, ogImage } = Astro.props;
 <html lang="en">
   <head>
     <HeadSEO title={title} description={description} ogImage={ogImage} />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!-- Ensure Font Awesome is loaded at the base layout level -->
     <script is:inline>
       // Ensure Font Awesome is properly initialized
@@ -23,8 +25,15 @@ const { title, description, ogImage } = Astro.props;
         searchPseudoElements: true
       };
     </script>
+    <style is:global>
+      :root {
+        --font-nunito: 'Nunito', sans-serif;
+        --font-pt-sans: 'PT Sans', sans-serif;
+      }
+    </style>
   </head>
-  <body class="bg-background min-h-screen font-sans antialiased">
+  <body class="antialiased relative font-nunito">
+    <div class="texture"></div>
     <div class="relative flex min-h-screen flex-col">
       <Header />
       <main class="flex-auto">
