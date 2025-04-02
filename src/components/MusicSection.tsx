@@ -1,12 +1,15 @@
 import React from 'react';
 import type { FC } from 'react';
+import { FontAwesomeIcon } from '../lib/fontawesome';
+import { faMusic, faGuitar, faCompactDisc, faHeadphones } from '@fortawesome/free-solid-svg-icons';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 interface MusicLink {
   id: string;
   title: string;
   description: string;
   url: string;
-  icon: string;
+  icon: any;
 }
 
 const MusicSection: FC = () => {
@@ -16,14 +19,14 @@ const MusicSection: FC = () => {
       title: "Loftwah The Beatsmiff Beats",
       description: "Lots of beats I have made over the years.",
       url: "https://www.youtube.com/playlist?list=PLKBAUoCO_FtlACntcZqTOD4hckJ8IAWZ3",
-      icon: "fa-solid fa-music"
+      icon: faHeadphones
     },
     {
       id: "produced",
       title: "Produced by Loftwah The Beatsmiff",
       description: "A bunch of music that I produced.",
       url: "https://www.youtube.com/playlist?list=PLKBAUoCO_FtkHiwRzyGzfhauIhNMBFw66",
-      icon: "fa-solid fa-music"
+      icon: faCompactDisc
     }
   ];
 
@@ -40,7 +43,7 @@ const MusicSection: FC = () => {
             className="flex items-center gap-4 p-4 bg-card border rounded-lg transition-all hover:shadow-md"
           >
             <div className="bg-primary/10 p-3 rounded-full">
-              <i className={`${link.icon} text-primary`}></i>
+              <FontAwesomeIcon icon={link.icon} className="w-5 h-5 text-primary" />
             </div>
             <div>
               <h3 className="font-medium">{link.title}</h3>

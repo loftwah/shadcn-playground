@@ -1,11 +1,13 @@
 import React from 'react';
 import type { FC } from 'react';
+import { FontAwesomeIcon } from '../lib/fontawesome';
+import { faBlog, faTerminal, faMagnifyingGlass, faPersonRunning } from '@fortawesome/free-solid-svg-icons';
 
 interface ProjectCardProps {
   title: string;
   description: string;
   url: string;
-  icon: string;
+  icon: any;
 }
 
 interface ProjectData {
@@ -13,7 +15,7 @@ interface ProjectData {
   title: string;
   description: string;
   url: string;
-  icon: string;
+  icon: any;
 }
 
 interface ContentData {
@@ -33,7 +35,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ title, description, url, icon }) =>
     >
       <div className="flex items-center gap-4">
         <div className="bg-primary/10 p-3 rounded-full">
-          <i className={`${icon} text-primary`}></i>
+          <FontAwesomeIcon icon={icon} className="w-5 h-5 text-primary" />
         </div>
         <div>
           <h3 className="font-medium">{title}</h3>
@@ -52,28 +54,28 @@ const ProjectsLinks: FC = () => {
       title: "My Blog",
       description: "My blog where I write about stuff.",
       url: "https://blog.deanlofts.xyz",
-      icon: "fa-solid fa-blog"
+      icon: faBlog
     },
     {
       id: "lfp",
       title: "Linux for Pirates! 1 & 2",
       description: "The home of my Linux for Pirates! and Ruby on Whales.",
       url: "https://linuxforpirates.deanlofts.xyz",
-      icon: "fa-solid fa-terminal"
+      icon: faTerminal
     },
     {
       id: "grabit",
       title: "GRABIT.SH",
       description: "A powerful CLI tool for gathering and summarising key information from Git repositories.",
       url: "https://grabit.sh",
-      icon: "fa-solid fa-magnifying-glass"
+      icon: faMagnifyingGlass
     },
     {
       id: "bogan-hustler",
       title: "Bogan Hustler",
       description: "A remake of Dope Wars but Straya",
       url: "https://boganhustler.deanlofts.xyz",
-      icon: "fa-solid fa-people-robbery"
+      icon: faPersonRunning
     }
   ];
 

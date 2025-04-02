@@ -1,6 +1,7 @@
 ---
 import { buttonVariants } from "@/components/ui/button";
 import ThemeToggle from "@/components/ThemeToggle.astro";
+import "../styles/fontawesome.css";
 ---
 
 <header
@@ -22,6 +23,7 @@ import ThemeToggle from "@/components/ThemeToggle.astro";
           rel="noreferrer"
           class={buttonVariants({ variant: 'ghost' })}
         >
+          <i class="fa-solid fa-blog mr-2"></i>
           Blog
         </a>
         <a
@@ -30,6 +32,7 @@ import ThemeToggle from "@/components/ThemeToggle.astro";
           rel="noreferrer"
           class={buttonVariants({ variant: 'ghost' })}
         >
+          <i class="fa-solid fa-terminal mr-2"></i>
           Linux for Pirates!
         </a>
         <a
@@ -38,6 +41,7 @@ import ThemeToggle from "@/components/ThemeToggle.astro";
           rel="noreferrer"
           class={buttonVariants({ variant: 'ghost' })}
         >
+          <i class="fa-brands fa-github mr-2"></i>
           GitHub
         </a>
         <ThemeToggle />

@@ -3,9 +3,8 @@ import type { FC } from 'react';
 import { Button } from '@/components/ui/button';
 import avatarImage from '../assets/images/loftwah_avatar.jpg';
 import { FontAwesomeIcon } from '../lib/fontawesome';
-import { faLock } from '@fortawesome/free-solid-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faTrophy, faNewspaper } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin, faXTwitter, faBluesky } from '@fortawesome/free-brands-svg-icons';
 
 const ProfileCard: FC = () => {
   return (
@@ -33,7 +32,7 @@ const ProfileCard: FC = () => {
           </a>
           <a href="https://bsky.app/profile/loftwah.bsky.social" target="_blank" rel="noreferrer">
             <Button variant="outline" size="icon">
-              <FontAwesomeIcon icon={faLock} className="w-5 h-5" />
+              <FontAwesomeIcon icon={faBluesky} className="w-5 h-5" />
             </Button>
           </a>
           <a href="https://linkedin.com/in/deanlofts" target="_blank" rel="noreferrer">
@@ -66,7 +65,7 @@ const ProfileCard: FC = () => {
           <div className="space-y-3">
             <div className="flex items-start gap-3">
               <div className="p-2 bg-primary/10 rounded-full">
-                <FontAwesomeIcon icon={faLock} className="w-5 h-5" />
+                <FontAwesomeIcon icon={faNewspaper} className="w-5 h-5" />
               </div>
               <div>
                 <h4 className="font-medium">Featured in Mashable</h4>
@@ -76,7 +75,7 @@ const ProfileCard: FC = () => {
             
             <div className="flex items-start gap-3">
               <div className="p-2 bg-primary/10 rounded-full">
-                <FontAwesomeIcon icon={faPhone} className="w-5 h-5" />
+                <FontAwesomeIcon icon={faTrophy} className="w-5 h-5" />
               </div>
               <div>
                 <h4 className="font-medium">HashiCorp Certified: Terraform Associate (003)</h4>
