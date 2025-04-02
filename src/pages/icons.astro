@@ -1,0 +1,28 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import IconExample from "../components/IconExample";
+import "../styles/fontawesome.css";
+---
+
+<BaseLayout
+  title="Font Awesome Examples | Shadcn Playground"
+  description="Example of Font Awesome integration with Astro and React"
+>
+  <section class="container py-10">
+    <h1 class="text-4xl font-bold mb-8">Font Awesome with Astro and React</h1>
+    
+    <div class="mb-6">
+      <p class="text-lg">
+        This page demonstrates how to use Font Awesome icons with Astro 5, React, and Tailwind CSS.
+      </p>
+    </div>
+    
+    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+      <IconExample client:load />
+    </div>
+    
+    <div class="mt-8">
+      <a href="/" class="text-blue-500 hover:underline">← Back to Home</a>
+    </div>
+  </section>
+</BaseLayout> 
